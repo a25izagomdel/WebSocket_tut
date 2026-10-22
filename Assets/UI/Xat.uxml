@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="mainContainer" style="flex-grow: 1; align-self: auto; flex-direction: row;">
+        <ui:VisualElement name="leftPanel" style="flex-grow: 1; flex-direction: column;">
+            <ui:Button text="Enviar missatge" name="btnEnviar" style="position: absolute; top: 416px; left: 170px;"/>
+            <ui:Label text="Nickname" name="nicknameLabel" style="position: absolute; top: 240px; left: 75px;"/>
+            <ui:Label text="Cos del missatge:" name="missatgeLabel" style="position: absolute; top: 334px; left: 70px;"/>
+            <ui:TextField label="" placeholder-text="filler text" name="nickname" style="overflow: hidden; flex-direction: row; position: absolute; top: 278px; left: 64px; height: 41px; width: 294px;"/>
+            <ui:TextField label="" placeholder-text="filler text" name="missatge" style="align-content: flex-start; position: absolute; top: 372px; left: 65px; height: 37px; width: 302px; right: 76px; white-space: normal;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="rightPanel" style="flex-grow: 1;">
+            <ui:ScrollView name="missatgeList" style="flex-direction: row;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
